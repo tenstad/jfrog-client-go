@@ -1,13 +1,14 @@
 package auth
 
 import (
-	"github.com/jfrog/jfrog-client-go/http/jfroghttpclient"
 	"sync"
 	"time"
 
-	"github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
-	"github.com/jfrog/jfrog-client-go/utils/io/httputils"
+	"github.com/tenstad/jfrog-client-go/http/jfroghttpclient"
+
+	"github.com/tenstad/jfrog-client-go/utils"
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
+	"github.com/tenstad/jfrog-client-go/utils/io/httputils"
 )
 
 var expiryHandleMutex sync.Mutex

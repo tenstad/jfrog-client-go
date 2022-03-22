@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/jfrog/jfrog-client-go/utils/io"
 	"io/ioutil"
 	"net/url"
 	"os"
@@ -14,13 +13,15 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/tenstad/jfrog-client-go/utils/io"
+
 	"github.com/jfrog/build-info-go/entities"
 	"github.com/jfrog/gofrog/stringutils"
 
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
 
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 const (

@@ -3,9 +3,9 @@ package tests
 import (
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/artifactory/services"
-	"github.com/jfrog/jfrog-client-go/artifactory/services/utils"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/artifactory/services"
+	"github.com/tenstad/jfrog-client-go/artifactory/services/utils"
 )
 
 func TestReplication(t *testing.T) {

@@ -1,10 +1,11 @@
 package io
 
 import (
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
 	"io"
 	"os"
 	"sort"
+
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
 )
 
 // Create new multi file ReaderAt

@@ -6,10 +6,10 @@
 
 </div>
 
-| Branch |                                                                                                                                                                              Status                                                                                                                                                                              |
-|:------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| master | [![Build status](https://github.com/jfrog/jfrog-client-go/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/jfrog/jfrog-client-go/actions) [![Static Analysis](https://github.com/jfrog/jfrog-client-go/actions/workflows/analysis.yml/badge.svg?branch=master)](https://github.com/jfrog/jfrog-client-go/actions/workflows/analysis.yml) |
-|  dev   |    [![Build status](https://github.com/jfrog/jfrog-client-go/actions/workflows/tests.yml/badge.svg?branch=dev)](https://github.com/jfrog/jfrog-client-go/actions) [![Static Analysis](https://github.com/jfrog/jfrog-client-go/actions/workflows/analysis.yml/badge.svg?branch=dev)](https://github.com/jfrog/jfrog-client-go/actions/workflows/analysis.yml)    |
+| Branch |                                                                                                                                                                                  Status                                                                                                                                                                                  |
+| :----: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| master | [![Build status](https://github.com/tenstad/jfrog-client-go/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/tenstad/jfrog-client-go/actions) [![Static Analysis](https://github.com/tenstad/jfrog-client-go/actions/workflows/analysis.yml/badge.svg?branch=master)](https://github.com/tenstad/jfrog-client-go/actions/workflows/analysis.yml) |
+|  dev   |    [![Build status](https://github.com/tenstad/jfrog-client-go/actions/workflows/tests.yml/badge.svg?branch=dev)](https://github.com/tenstad/jfrog-client-go/actions) [![Static Analysis](https://github.com/tenstad/jfrog-client-go/actions/workflows/analysis.yml/badge.svg?branch=dev)](https://github.com/tenstad/jfrog-client-go/actions/workflows/analysis.yml)    |
 
 ## Table of Contents
 
@@ -180,13 +180,13 @@ To run the tests on the source code, you'll need a running JFrog instance. See t
 Use the following command with the below options to run the tests.
 
 ```sh
-go test -v github.com/jfrog/jfrog-client-go/tests -timeout 0 [test-types] [flags]
+go test -v github.com/tenstad/jfrog-client-go/tests -timeout 0 [test-types] [flags]
 ```
 
 If you'd like to run a specific test, add the test function name using the `-run` flag. For example:
 
 ```sh
-go test -v github.com/jfrog/jfrog-client-go/tests -timeout 0 -run TestGetArtifactoryVersionWithCustomHttpClient -test.artifactory -rt.url=http://127.0.0.1:8081/artifactory -rt.user=admin -rt.password=password
+go test -v github.com/tenstad/jfrog-client-go/tests -timeout 0 -run TestGetArtifactoryVersionWithCustomHttpClient -test.artifactory -rt.url=http://127.0.0.1:8081/artifactory -rt.user=admin -rt.password=password
 ```
 
 **Note:** The tests create an Artifactory repository named _jfrog-client-tests-repo1_. Once the tests are completed, the content of this repository is deleted.
@@ -202,7 +202,7 @@ go test -v github.com/jfrog/jfrog-client-go/tests -timeout 0 -run TestGetArtifac
 | `-test.xray`         | Xray tests         | Artifactory with Xray         |
 | `-test.pipelines`    | Pipelines tests    | JFrog Pipelines               |
 | `-test.access`       | Access tests       | Artifactory Pro               |
-| `-test.repositories`   | Access tests       | Artifactory Pro               |
+| `-test.repositories` | Access tests       | Artifactory Pro               |
 
 #### Connection Details
 
@@ -229,11 +229,15 @@ go test -v github.com/jfrog/jfrog-client-go/tests -timeout 0 -run TestGetArtifac
 ## General APIs
 
 ### Setting the Logger
+
 Default logger:
+
 ```go
 log.SetLogger(log.NewLogger(log.INFO, nil))
 ```
+
 You may also log to a file, and/or add log prefixes as shown below:
+
 ```go
 var file *os.File
 // Log flags as described in https://pkg.go.dev/log#pkg-constants.
@@ -1282,16 +1286,19 @@ err = accessManager.AssignRepoToProject("repoName")
 ```
 
 #### Get all groups assigned to a project
+
 ```go
 err = accessManager.GetProjectsGroups("tstprj")
 ```
 
 #### Get a specific group assigned to a project
+
 ```go
 err = accessManager.GetProjectsGroup("tstprj", "tstgroup")
 ```
 
 #### Add or update a group assigned to a project
+
 ```go
 projectGroup := accessServices.ProjectGroup{
   Name:  "tstgroup",
@@ -1301,6 +1308,7 @@ err = accessManager.UpdateGroupInProject("tstprj", "tstgroup", projectGroup)
 ```
 
 #### Remove a group from a project
+
 ```go
 err = accessManager.DeleteExistingProjectGroup("tstprj", "tstgroup")
 ```
@@ -1868,4 +1876,3 @@ err := pipelinesManager.DeleteIntegration(integrationId)
 projectIntegrationId := 1234
 err := pipelinesManager.AddSource(projectIntegrationId, "domain/repo", "master", "pipelines.yml")
 ```
-

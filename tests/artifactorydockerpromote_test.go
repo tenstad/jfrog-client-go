@@ -7,10 +7,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/artifactory/auth"
-	"github.com/jfrog/jfrog-client-go/artifactory/services"
-	"github.com/jfrog/jfrog-client-go/http/jfroghttpclient"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/artifactory/auth"
+	"github.com/tenstad/jfrog-client-go/artifactory/services"
+	"github.com/tenstad/jfrog-client-go/http/jfroghttpclient"
 )
 
 const (

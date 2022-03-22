@@ -1,9 +1,9 @@
 package pipelines
 
 import (
-	"github.com/jfrog/jfrog-client-go/config"
-	"github.com/jfrog/jfrog-client-go/http/jfroghttpclient"
-	"github.com/jfrog/jfrog-client-go/pipelines/services"
+	"github.com/tenstad/jfrog-client-go/config"
+	"github.com/tenstad/jfrog-client-go/http/jfroghttpclient"
+	"github.com/tenstad/jfrog-client-go/pipelines/services"
 )
 
 type PipelinesServicesManager struct {

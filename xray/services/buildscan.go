@@ -4,15 +4,16 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/jfrog/jfrog-client-go/artifactory/services/utils"
-	"github.com/jfrog/jfrog-client-go/auth"
-	"github.com/jfrog/jfrog-client-go/http/jfroghttpclient"
-	clientutils "github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/io/httputils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
 	"net/http"
 	"strings"
+
+	"github.com/tenstad/jfrog-client-go/artifactory/services/utils"
+	"github.com/tenstad/jfrog-client-go/auth"
+	"github.com/tenstad/jfrog-client-go/http/jfroghttpclient"
+	clientutils "github.com/tenstad/jfrog-client-go/utils"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/utils/io/httputils"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 const (

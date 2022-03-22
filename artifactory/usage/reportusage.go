@@ -6,11 +6,12 @@ import (
 	"net/http"
 
 	"errors"
+
 	versionutil "github.com/jfrog/gofrog/version"
-	"github.com/jfrog/jfrog-client-go/artifactory"
-	"github.com/jfrog/jfrog-client-go/artifactory/services/utils"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/tenstad/jfrog-client-go/artifactory"
+	"github.com/tenstad/jfrog-client-go/artifactory/services/utils"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 const minArtifactoryVersion = "6.9.0"

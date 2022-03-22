@@ -1,8 +1,9 @@
 package _go
 
 import (
-	"github.com/jfrog/jfrog-client-go/artifactory/services/utils"
 	"strings"
+
+	"github.com/tenstad/jfrog-client-go/artifactory/services/utils"
 )
 
 func CreateUrlPath(moduleId, version, props, extension string, url *string) error {

@@ -9,13 +9,13 @@ import (
 	"testing"
 	"time"
 
-	artifactoryServices "github.com/jfrog/jfrog-client-go/artifactory/services"
-	"github.com/jfrog/jfrog-client-go/artifactory/services/utils"
-	"github.com/jfrog/jfrog-client-go/distribution/services"
-	distributionServicesUtils "github.com/jfrog/jfrog-client-go/distribution/services/utils"
-	"github.com/jfrog/jfrog-client-go/http/httpclient"
-	"github.com/jfrog/jfrog-client-go/utils/io/httputils"
 	"github.com/stretchr/testify/assert"
+	artifactoryServices "github.com/tenstad/jfrog-client-go/artifactory/services"
+	"github.com/tenstad/jfrog-client-go/artifactory/services/utils"
+	"github.com/tenstad/jfrog-client-go/distribution/services"
+	distributionServicesUtils "github.com/tenstad/jfrog-client-go/distribution/services/utils"
+	"github.com/tenstad/jfrog-client-go/http/httpclient"
+	"github.com/tenstad/jfrog-client-go/utils/io/httputils"
 )
 
 type distributableDistributionStatus string

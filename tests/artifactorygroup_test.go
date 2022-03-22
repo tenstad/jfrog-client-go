@@ -5,8 +5,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/artifactory/services"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/artifactory/services"
 )
 
 func TestGroups(t *testing.T) {

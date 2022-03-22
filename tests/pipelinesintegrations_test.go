@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/pipelines/services"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/pipelines/services"
 )
 
 const (

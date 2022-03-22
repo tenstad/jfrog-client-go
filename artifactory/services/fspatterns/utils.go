@@ -3,14 +3,15 @@ package fspatterns
 import (
 	"bytes"
 	"fmt"
-	biutils "github.com/jfrog/build-info-go/utils"
-	serviceutils "github.com/jfrog/jfrog-client-go/artifactory/services/utils"
-	"github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
 	"os"
 	"regexp"
 	"strings"
+
+	biutils "github.com/jfrog/build-info-go/utils"
+	serviceutils "github.com/tenstad/jfrog-client-go/artifactory/services/utils"
+	"github.com/tenstad/jfrog-client-go/utils"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
 )
 
 // Return all the existing paths of the provided root path

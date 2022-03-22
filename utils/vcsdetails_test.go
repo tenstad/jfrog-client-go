@@ -1,12 +1,13 @@
 package utils
 
 import (
-	testsutils "github.com/jfrog/jfrog-client-go/utils/tests"
-	"github.com/stretchr/testify/assert"
 	"path/filepath"
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
+	"github.com/stretchr/testify/assert"
+	testsutils "github.com/tenstad/jfrog-client-go/utils/tests"
+
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
 )
 
 func TestVcsDetails(t *testing.T) {

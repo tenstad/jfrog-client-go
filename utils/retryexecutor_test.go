@@ -2,9 +2,10 @@ package utils
 
 import (
 	"fmt"
-	"github.com/jfrog/jfrog-client-go/utils/log"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 func TestRetryExecutorSuccess(t *testing.T) {
