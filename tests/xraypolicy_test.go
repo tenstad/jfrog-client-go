@@ -3,8 +3,8 @@ package tests
 import (
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/xray/services/utils"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/xray/services/utils"
 )
 
 func TestXrayPolicy(t *testing.T) {

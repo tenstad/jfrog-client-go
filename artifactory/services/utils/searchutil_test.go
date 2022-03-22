@@ -2,15 +2,16 @@ package utils
 
 import (
 	"fmt"
-	"github.com/jfrog/gofrog/version"
 	"path/filepath"
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/io/content"
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/jfrog/gofrog/version"
+
 	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/utils"
+	"github.com/tenstad/jfrog-client-go/utils/io/content"
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 func TestGetFullUrl(t *testing.T) {

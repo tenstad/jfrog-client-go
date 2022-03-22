@@ -3,8 +3,8 @@ package utils
 import (
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/utils/log"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 func init() {

@@ -17,7 +17,7 @@ import (
 	"github.com/jfrog/build-info-go/entities"
 	biutils "github.com/jfrog/build-info-go/utils"
 
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
 )
 
 const (

@@ -4,14 +4,15 @@ import (
 	"bufio"
 	"encoding/json"
 	"errors"
-	"github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
 	"io"
 	"os"
 	"reflect"
 	"sort"
 	"sync"
+
+	"github.com/tenstad/jfrog-client-go/utils"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 // Open and read JSON files, find the array key inside it and load its value into the memory in small chunks.

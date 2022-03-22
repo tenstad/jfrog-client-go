@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/access/services"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/access/services"
 )
 
 func TestAccessProject(t *testing.T) {

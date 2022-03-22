@@ -1,12 +1,13 @@
 package io
 
 import (
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
-	testUtils "github.com/jfrog/jfrog-client-go/utils/tests"
-	"github.com/stretchr/testify/assert"
 	"io"
 	"reflect"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
+	testUtils "github.com/tenstad/jfrog-client-go/utils/tests"
 )
 
 func TestNewMultiFileReaderAt(t *testing.T) {

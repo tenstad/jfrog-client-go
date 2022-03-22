@@ -1,17 +1,18 @@
 package tests
 
 import (
-	"github.com/jfrog/jfrog-client-go/utils/tests"
 	"io/ioutil"
 	"path/filepath"
 	"testing"
 
+	"github.com/tenstad/jfrog-client-go/utils/tests"
+
 	"github.com/stretchr/testify/assert"
 
-	"github.com/jfrog/jfrog-client-go/artifactory/services"
-	"github.com/jfrog/jfrog-client-go/artifactory/services/utils"
-	clientutils "github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
+	"github.com/tenstad/jfrog-client-go/artifactory/services"
+	"github.com/tenstad/jfrog-client-go/artifactory/services/utils"
+	clientutils "github.com/tenstad/jfrog-client-go/utils"
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
 )
 
 func TestArtifactoryDownload(t *testing.T) {

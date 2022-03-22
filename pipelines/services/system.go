@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/jfrog/jfrog-client-go/auth"
-	"github.com/jfrog/jfrog-client-go/http/jfroghttpclient"
-	"github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/tenstad/jfrog-client-go/auth"
+	"github.com/tenstad/jfrog-client-go/http/jfroghttpclient"
+	"github.com/tenstad/jfrog-client-go/utils"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 type SystemService struct {

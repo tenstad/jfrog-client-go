@@ -7,11 +7,11 @@ import (
 	"os"
 	"sync"
 
-	"github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/tenstad/jfrog-client-go/utils"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
 )
 
 const (

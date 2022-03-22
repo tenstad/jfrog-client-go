@@ -3,9 +3,10 @@ package auth
 import (
 	"encoding/base64"
 	"encoding/json"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
 	"strings"
 	"time"
+
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
 )
 
 func extractPayloadFromAccessToken(token string) (TokenPayload, error) {

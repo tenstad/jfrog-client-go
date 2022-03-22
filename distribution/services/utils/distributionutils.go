@@ -1,10 +1,11 @@
 package utils
 
 import (
-	"github.com/jfrog/gofrog/stringutils"
 	"regexp"
 
-	rtUtils "github.com/jfrog/jfrog-client-go/artifactory/services/utils"
+	"github.com/jfrog/gofrog/stringutils"
+
+	rtUtils "github.com/tenstad/jfrog-client-go/artifactory/services/utils"
 )
 
 type ReleaseNotesSyntax string

@@ -1,13 +1,14 @@
 package utils
 
 import (
-	"github.com/jfrog/jfrog-client-go/utils/io"
 	"path/filepath"
 	"reflect"
 	"regexp"
 	"sort"
 	"strings"
 	"testing"
+
+	"github.com/tenstad/jfrog-client-go/utils/io"
 )
 
 func TestRemoveRepoFromPath(t *testing.T) {

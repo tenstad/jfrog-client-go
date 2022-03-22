@@ -2,15 +2,16 @@ package utils
 
 import (
 	"fmt"
-	jwt "github.com/golang-jwt/jwt/v4"
-	"github.com/jfrog/jfrog-client-go/auth"
-	"github.com/jfrog/jfrog-client-go/http/jfroghttpclient"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"golang.org/x/crypto/openpgp"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
+
+	jwt "github.com/golang-jwt/jwt/v4"
+	"github.com/tenstad/jfrog-client-go/auth"
+	"github.com/tenstad/jfrog-client-go/http/jfroghttpclient"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
+	"golang.org/x/crypto/openpgp"
 )
 
 type RbGpgValidator struct {

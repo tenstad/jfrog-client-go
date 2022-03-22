@@ -1,10 +1,10 @@
 package _go
 
 import (
-	"github.com/jfrog/jfrog-client-go/artifactory/services/utils"
+	"github.com/tenstad/jfrog-client-go/artifactory/services/utils"
 
-	"github.com/jfrog/jfrog-client-go/auth"
-	"github.com/jfrog/jfrog-client-go/http/jfroghttpclient"
+	"github.com/tenstad/jfrog-client-go/auth"
+	"github.com/tenstad/jfrog-client-go/http/jfroghttpclient"
 )
 
 type GoService struct {

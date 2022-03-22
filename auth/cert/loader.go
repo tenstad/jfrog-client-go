@@ -3,11 +3,12 @@ package cert
 import (
 	"crypto/tls"
 	"crypto/x509"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
 	"io/ioutil"
 	"net/http"
 	"path/filepath"
+
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
 )
 
 func loadCertificates(caCertPool *x509.CertPool, certificatesDirPath string) error {

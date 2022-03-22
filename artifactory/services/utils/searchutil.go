@@ -15,10 +15,10 @@ import (
 	buildinfo "github.com/jfrog/build-info-go/entities"
 	"github.com/jfrog/gofrog/version"
 
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
-	"github.com/jfrog/jfrog-client-go/utils/io/content"
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/utils/io/content"
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 type RequiredArtifactProps int

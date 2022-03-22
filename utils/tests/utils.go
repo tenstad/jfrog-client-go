@@ -2,9 +2,6 @@ package tests
 
 import (
 	"bufio"
-	"github.com/jfrog/jfrog-client-go/utils/io/fileutils"
-	"github.com/jfrog/jfrog-client-go/utils/log"
-	"github.com/stretchr/testify/assert"
 	"net"
 	"net/http"
 	"os"
@@ -12,6 +9,10 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/utils/io/fileutils"
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 type HttpServerHandlers map[string]func(w http.ResponseWriter, r *http.Request)

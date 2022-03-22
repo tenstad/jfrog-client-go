@@ -1,9 +1,10 @@
 package utils
 
 import (
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
 	"regexp"
 	"strings"
+
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
 )
 
 //#nosec G101 -- False positive - no hardcoded credentials.

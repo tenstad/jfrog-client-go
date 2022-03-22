@@ -2,8 +2,9 @@ package usage
 
 import (
 	"fmt"
-	"github.com/jfrog/jfrog-client-go/utils"
 	"testing"
+
+	"github.com/tenstad/jfrog-client-go/utils"
 )
 
 func TestIsVersionCompatible(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/jfrog/jfrog-client-go
+module github.com/tenstad/jfrog-client-go
 
 go 1.17
 

@@ -1,9 +1,10 @@
 package httputils
 
 import (
-	"github.com/jfrog/jfrog-client-go/utils"
 	"net/http"
 	"time"
+
+	"github.com/tenstad/jfrog-client-go/utils"
 )
 
 type HttpClientDetails struct {

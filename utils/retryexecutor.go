@@ -2,8 +2,9 @@ package utils
 
 import (
 	"fmt"
-	"github.com/jfrog/jfrog-client-go/utils/log"
 	"time"
+
+	"github.com/tenstad/jfrog-client-go/utils/log"
 )
 
 type ExecutionHandlerFunc func() (bool, error)

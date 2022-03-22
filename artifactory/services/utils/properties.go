@@ -3,9 +3,10 @@ package utils
 import (
 	"encoding/base64"
 	"fmt"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
 	"net/url"
 	"strings"
+
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
 )
 
 const (

@@ -3,8 +3,8 @@ package utils
 import (
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/artifactory/services/utils"
 	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/artifactory/services/utils"
 )
 
 func TestCreateBundleBody(t *testing.T) {

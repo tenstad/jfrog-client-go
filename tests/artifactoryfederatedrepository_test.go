@@ -1,11 +1,12 @@
 package tests
 
 import (
-	"github.com/jfrog/gofrog/version"
 	"testing"
 
-	"github.com/jfrog/jfrog-client-go/artifactory/services"
+	"github.com/jfrog/gofrog/version"
+
 	"github.com/stretchr/testify/assert"
+	"github.com/tenstad/jfrog-client-go/artifactory/services"
 )
 
 func TestArtifactoryFederatedRepository(t *testing.T) {

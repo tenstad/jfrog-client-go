@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/jfrog/jfrog-client-go/auth"
-	"github.com/jfrog/jfrog-client-go/http/jfroghttpclient"
-	clientutils "github.com/jfrog/jfrog-client-go/utils"
-	"github.com/jfrog/jfrog-client-go/utils/errorutils"
+	"github.com/tenstad/jfrog-client-go/auth"
+	"github.com/tenstad/jfrog-client-go/http/jfroghttpclient"
+	clientutils "github.com/tenstad/jfrog-client-go/utils"
+	"github.com/tenstad/jfrog-client-go/utils/errorutils"
 )
 
 type SystemService struct {
